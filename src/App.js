@@ -89,6 +89,13 @@ function App() {
 				) : (
 					""
 				)}
+				{weather.cod === "404" ? (
+					<div className="weather-box">
+						<div className="weather">SORRY CAN'T FIND OUR CITY</div>
+					</div>
+				) : (
+					""
+				)}
 			</main>
 		</div>
 	);
